@@ -1,0 +1,79 @@
+body {
+	background-color: #777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; /* The font looks slightly different on my webpage
+	than it does in the model image. Am I just crazy, or is it different looking? */
+	font-size: 18px;
+	text-align: center;
+	width: 960px;
+	color: #777;
+	margin: 0 auto;
+}
+
+/* The "Helpful Hings" section says to review the 'display' concept in CSS, but I didn't use that. Do I need to use
+that somewhere? */
+
+header {
+	padding: 30px;
+	margin: 10px 0 10px 0;
+}
+
+nav {
+	padding: 30px;
+	margin-bottom: 20px;
+}
+
+article {
+	background-color: #777;
+	color: #ebebeb;
+	padding: 20px 20px 5px 20px;
+	margin-top: 30px;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 10px; /* For both this tag and the h1 tag, I noticed that they had a default margin. So I made the h1
+	bottom margin 0 and the p top margin 10px in order to get them closer together. Is this what you'd do?*/
+}
+
+.bodyComponents {
+	background-color: #ebebeb;
+}
+
+.white {
+	background-color: #ebebeb;
+	color: #777;
+	padding: 15px;
+}
+
+#section {
+	float: left;
+	overflow: auto; /*This seems unnecessary here. In theory, I'd think I'd want it. But I tried taking it out, and
+	it made no difference. */
+	width: 475px; /*I made it 485 because I gave it a 10px padding on each side (left and right). Is that correct?*/
+	padding: 30px 10px 10px 10px; /*I did this to make the article section closer to the edge on the right, bottom, and left,
+	but when I did so, the section container shrunk a bit. Why? In other words, it seems like the container is now smaller than
+	495px. Is there another way I should finesse those edges? Also, maybe a dumb question, but how many pixels do you have to play
+	with in a webpage?*/
+	margin-bottom: 20px;
+}
+
+#aside {
+	float: right;
+	overflow: auto;
+	height: 261.047px; /*I found the height of the section and added its padding to that number to make the aside match
+	in height, and I then deducted 30px to cancel out the top padding (so it didn't add it to the bottom. Is that what 
+	you would do? */
+	width: 445px; /*I did 906px - 495px - 20px to get this number. Is that what you'd do?*/
+	padding-top: 30px;
+}
+
+#footer {
+	clear: both;
+	padding: 30px;
+	margin-top: 20px; /*I noticed that this doesn't really do anything. Why? I left it just so I could ask the question.
+	I had to put a margin below the section container in order to move the footer down and have th space I wanted between
+	the section and the footer.*/
+}
